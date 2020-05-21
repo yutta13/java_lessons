@@ -3,13 +3,15 @@
  */
 public class Home2n2 {
     public static void main(String[] args) {
-        int n = 12;
+        int n = 3;
+   //     char i = ;
 
         if ((n>0)&(n<=4))
-
             System.out.println("2,4");
-        if ((n>=5)&(n<11))
+
+        else if ((n>=5)&(n<11))
             System.out.println("5,7,9,11");
+
         else {
             System.out.println("err");
         }

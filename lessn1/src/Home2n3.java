@@ -9,6 +9,23 @@ d.	То же для 2-го
 */
 public class Home2n3 {
     public static void main(String[] args) {
+        String a1 = "Иванов";
+        String b1 = "Иван";
+        String c1 = "Иванович";
+        String a2 = "Ивацнов";
+        String b2 = "Иqван";
+        String c2 = "Иванович";
+        char s = ' ';
+
+ //       if ((a1+b1+c1)==(a2+b2+c2))
+        if ((a1 + b1 + c1).equals(a2 + b2 + c2))
+            System.out.println("Полные тезки: " + (a1 + s + b1 +s+ c1));
+        else if ((a1==a2)&((b1!=b2)||(c1!=c2)))
+            System.out.println("Однофамильцы: " + a1);
+        else if ((b1==b2)&((a1!=a2)||(c1!=c2)))
+            System.out.println("Тезки: " + b1);
+        else if ((a1!=a2)&(b1!=b2))
+            System.out.println("неизвестно");
 
     }
 }

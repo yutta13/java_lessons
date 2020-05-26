@@ -5,7 +5,7 @@
  */
 
 public class DigitPrinter {
-    static int n = 18808975;
+   static int n = 18808975;
 
 
     private static void printDigits(int n) {
@@ -23,5 +23,6 @@ public class DigitPrinter {
     }
 
 }
+
 
 

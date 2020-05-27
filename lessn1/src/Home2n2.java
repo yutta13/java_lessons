@@ -12,8 +12,8 @@ public class Home2n2 {
         else if ((n>=5)&(n<11))
             System.out.println("5,7,9,11");
 
-        else {
+        else
             System.out.println("err");
-        }
+
     }
 }

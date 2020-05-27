@@ -5,10 +5,10 @@
  */
 
 public class DigitPrinter {
-   static int n = 18808975;
 
 
-    private static void printDigits(int n) {
+
+    void printDigits(int n) {
         int a=0;
         if (n >= 1){
             a = n%10;
@@ -19,7 +19,9 @@ public class DigitPrinter {
     }
 
     public static void main(String[] args) {
-        printDigits(n);
+        int n = 1880897534;
+        DigitPrinter d= new DigitPrinter();
+        d.printDigits(n);
     }
 
 }

@@ -32,6 +32,10 @@ public class Car {
     static double showTankVolume() {
         return tankVolume;
     }
+    void showTankVolume2() {
+        tankVolume=remainingFuel;
+         System.out.println("Оставшееся топливо " + tankVolume);
+    }
 
     public static void main(String[] args) {
         System.out.println("объем бака " + showTankVolume());
@@ -39,8 +43,6 @@ public class Car {
         Car carNew = new Car(90);
         carNew.spendFuel();
         carNew.showRemainingFuel();
-
-
+        carNew.showTankVolume2();
     }
-
 }

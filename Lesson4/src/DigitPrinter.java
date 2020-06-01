@@ -6,8 +6,6 @@
 
 public class DigitPrinter {
 
-
-
     void printDigits(int n) {
         int a=0;
         if (n >= 1){

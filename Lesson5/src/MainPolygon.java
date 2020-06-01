@@ -8,7 +8,7 @@ public class MainPolygon {
     public static void main(String[] args) {
 
         Polygon[] arrayPolygons = new Polygon[3]; //обьект класса
-            arrayPolygons[0] =  new Polygon(4, new int[]{5,5,4,4});
+            arrayPolygons[0] =  new Polygon(5, new int[]{5,5,4,4,7});
 
             arrayPolygons[1] =  new Polygon(4,6);
 

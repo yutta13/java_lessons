@@ -1,4 +1,4 @@
-package ru.Firma;
+package ru.Firma.forASecond;
 
 public class A {
     protected int a = 4;

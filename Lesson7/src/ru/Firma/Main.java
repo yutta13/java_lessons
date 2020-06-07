@@ -1,5 +1,7 @@
 package ru.Firma;
 
+import ru.Firma.forASecond.A;
+
 public class Main extends A {
     public static void main(String[] args) {
         Main a = new Main();

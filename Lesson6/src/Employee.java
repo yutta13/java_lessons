@@ -1,6 +1,8 @@
 import java.awt.*;
 class Employee {
-    Employee(){};//дефолтный конструктор, потребовался при создании др класов
+    Employee(){
+        System.out.println("Hello World");
+    } //дефолтный конструктор, потребовался при создании др класов
     double rate=18; //плата за день
     int day;  //кол-во отработанных дней
     double salary;

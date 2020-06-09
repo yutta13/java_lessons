@@ -5,7 +5,7 @@ public class A {
     protected int b = 4;
     protected int c = 4;
 
-    int d = 4;
+    private int d = 4;
 
     protected int getD() {
         return d;

@@ -4,8 +4,8 @@ import org.w3c.dom.ls.LSOutput;
 
 public class Gramophone implements Plate{
 
-    Playing a;
-    Gramophone(Playing a) {
+    Plate a;
+    Gramophone(Plate a) {
         this.a = a;
     }
 

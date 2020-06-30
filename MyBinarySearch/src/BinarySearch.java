@@ -23,7 +23,7 @@ public class BinarySearch {
         int start=0;
         int end = a.length;
         int mid=0;
-        int n = 8;
+        int n = 7;
 
         boolean isFound = false;
 
@@ -37,24 +37,24 @@ public class BinarySearch {
 
         while (!isFound) {
             mid = (end + start)/2;
+
             //System.out.println(mid);
-            if (a[mid] == n){
+           if (a[mid] == n){
                 isFound = true;
                System.out.println(" index of n =  "+ mid);
                break;
            }
            else if (a[mid] > n){
-               end=mid;
+               end=mid-1;
              //  System.out.println("work test2 found index" +a[mid]);
                 isFound = false;
            }
            else if (a[mid] < n) {
-                start = mid;
+                start = mid+1;
               //  System.out.println("work test3 found index  " + a[mid]);
                 isFound = false;
             }
         }
     }
 }
-
 

@@ -53,9 +53,7 @@ public class BinarySearch {
               //  System.out.println("work test3 found index  " + a[mid]);
                 isFound = false;
             }
-
         }
-
     }
 }
 

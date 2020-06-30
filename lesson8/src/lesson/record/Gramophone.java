@@ -1,7 +1,5 @@
 package lesson.record;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class Gramophone implements Plate{
 
     Plate a;

@@ -5,6 +5,4 @@ public class Classic implements Plate{
     public void play() {
         System.out.println("Проигрывается классическая музыка");
     }
-
-
 }

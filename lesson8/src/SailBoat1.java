@@ -7,5 +7,4 @@ public class SailBoat1 implements SailBoat{
         String result =( sailslow ==true) ? "Паруса cпущены" : "Паруса подняты";
         System.out.println( result);
     }
-
 }

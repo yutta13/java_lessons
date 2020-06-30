@@ -45,15 +45,19 @@ public class BinarySearch {
                break;
            }
            else if (a[mid] > n){
-               end=mid-1;
+               end=mid;
              //  System.out.println("work test2 found index" +a[mid]);
                 isFound = false;
            }
            else if (a[mid] < n) {
-                start = mid+1;
+                start = mid;
               //  System.out.println("work test3 found index  " + a[mid]);
                 isFound = false;
             }
+           else if (mid<=2) {
+               System.out.println("work test3 found index  " + a[mid]);
+              break;
+           }
         }
     }
 }

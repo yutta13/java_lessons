@@ -23,7 +23,7 @@ public class BinarySearch {
         int start=0;
         int end = a.length;
         int mid=0;
-        int n = 7;
+        int n = 12;
 
         boolean isFound = false;
 
@@ -37,6 +37,7 @@ public class BinarySearch {
 
         while (!isFound) {
             mid = (end + start)/2;
+            aLength= end-(start+1);
 
             //System.out.println(mid);
            if (a[mid] == n){

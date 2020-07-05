@@ -44,9 +44,11 @@ public class SummaryScore {
     void addAllStudents(Collection<Student> ss){
         array.addAll(ss);
     }
-    void removeStudents(){
+ /*   void removeStudents(){
         array.addAll(ss);
     }
+    
+  */
     void containsStudent(Student student){
         array.contains(student);
     }

@@ -5,14 +5,19 @@ public class QueueDequeue {
 
     ArrayDeque<Man> elevator = new ArrayDeque<>();
 
-
+    void addManF(Man m){
+        int index = elevator.size() ;//iразмер массива
+        elevator.addFirst(m);
+        System.out.println(index);
+    }
 }
 
-class Man {
-    String name;
-    int age;
+    class Man {
+        String name;
+        int age;
 
         public static void main(String[] args) {
+
             Man m1 = new Man();
             m1.name= "Man1";
             m1.age = 7;
@@ -31,15 +36,19 @@ class Man {
 
             QueueDequeue q = new QueueDequeue();
 
-            q.elevator.add(m1);//добавление в конец массива
+            q.addManF(m1);//добавление в конец массива
             q.elevator.add(m2);
             q.elevator.add(m3);
             q.elevator.add(m4);
 
             int n=q.elevator.size();
+
             q.elevator.getFirst();
             q.elevator.getLast();
+
             System.out.println(n);
 
         }
-}
+
+    }
+

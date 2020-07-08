@@ -5,10 +5,10 @@ public class QueueDequeue {
 
     ArrayDeque<Man> elevator = new ArrayDeque<>();
 
-    void addManF(Man m){
+    void addManL(Man m){
         int index = elevator.size() ;//iразмер массива
-        elevator.addFirst(m);
-        System.out.println(index);
+        elevator.addLast(m);
+        System.out.println("в лифт зашел "+ m.name + " даем ему индекс "+ index);
     }
 }
 
@@ -36,10 +36,10 @@ public class QueueDequeue {
 
             QueueDequeue q = new QueueDequeue();
 
-            q.addManF(m1);//добавление в конец массива
-            q.elevator.add(m2);
-            q.elevator.add(m3);
-            q.elevator.add(m4);
+            q.addManL(m1);//добавление в конец массива
+            q.addManL(m2);
+            q.addManL(m3);
+            q.addManL(m4);
 
             int n=q.elevator.size();
 

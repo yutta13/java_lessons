@@ -1,34 +1,84 @@
 import java.util.HashMap;
 import java.util.Map;
 
-import static jdk.vm.ci.amd64.AMD64.k1;
 
 public class Laptop {
     String memory;
-    String OSMacOS;
+    String OS;
     String RAM;
     String VideoCard;
 
+    Map<String, String> properties = new HashMap<>();
+
+
+    void setMemory(String m){
+        this.memory = m;
+        properties.put(memory,m);
+    }
+    
+    void setOS(String s){
+        this.OS = s;
+        properties.put(OS,s);
+    }
+    void setRAM(String r){
+        this.RAM = r;
+        properties.put(RAM,r);
+    }
+    void setVideoCard(String v){
+        this.VideoCard = v;
+        properties.put(VideoCard,v);
+    }
+
+
+    void printProperties(Object p){
+        System.out.println(properties.get(p));
+    }
+    void removeProperties(Object p){
+        properties.remove(p);
+    }
+    void replaceProperties(String k, String v){
+        properties.replace(k, v);
+    }
 
 
     public static void main(String[] args) {
-        Map<String, String> properties = new HashMap<>();
 
         Laptop mac = new Laptop();
 
-        properties.put(mac.memory,"128 Gb");
-        properties.put(mac.OSMacOS, "MacOS Catalina");
-        properties.put(mac.RAM, "DDR3");
-        properties.put(mac.VideoCard, "Intel Iris Pro 1536 MB");
+        mac.setMemory("128 GB");
+        mac.setOS("MacOS Catalina");
+        mac.setRAM("DDR3");
+        mac.setVideoCard("Intel(R) UHD Graphics 620\\n");
+
+        mac.printProperties(mac.memory);
+
+        mac.removeProperties(mac.RAM);
+
 
         Laptop dell = new Laptop();
+        dell.setMemory("64 Gb");
+        dell.printProperties(dell.memory);
+        dell.replaceProperties(dell.memory, "256 gb");
+        dell.printProperties(dell.memory);
 
+
+        System.out.println(dell.properties.values());
+        System.out.println(mac.properties.values());
+
+        mac.replaceProperties(mac.OS, "Catalina 2");
+
+        System.out.println(dell.properties.values());
+        System.out.println(mac.properties.values());
+/*
         properties.put(dell.memory,"64 Gb");
         properties.put(dell.OSMacOS, "Windows10");
         properties.put(dell.RAM, "DDR3");
         properties.put(dell.VideoCard, "Intel(R) UHD Graphics 620\n");
 
-        String macMemory = properties.get(mac.memory);
+
+ */
+
+
 
 
     }

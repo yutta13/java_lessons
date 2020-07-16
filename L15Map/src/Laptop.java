@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,7 +17,7 @@ public class Laptop {
         this.memory = m;
         properties.put(memory,m);
     }
-    
+
     void setOS(String s){
         this.OS = s;
         properties.put(OS,s);
@@ -66,17 +68,10 @@ public class Laptop {
         System.out.println(mac.properties.values());
 
         mac.replaceProperties(mac.OS, "Catalina 2");
+        boolean contain =  mac.properties.containsKey("RAM");
 
         System.out.println(dell.properties.values());
         System.out.println(mac.properties.values());
-/*
-        properties.put(dell.memory,"64 Gb");
-        properties.put(dell.OSMacOS, "Windows10");
-        properties.put(dell.RAM, "DDR3");
-        properties.put(dell.VideoCard, "Intel(R) UHD Graphics 620\n");
-
-
- */
 
 
 

@@ -47,7 +47,7 @@ public class Shop {
 
         System.out.println(setA);
         System.out.println(setB);
-        System.out.println("А ∩Б, все элементы  А + все элементы Б " + setC);
+        System.out.println("А ∩ Б, все элементы  А + все элементы Б " + setC);
         System.out.println("А ꓴ Б, только то, что есть и А, и в Б " + setG);
         System.out.println("А Δ Б, все элементы, кроме общих "+setD);
 

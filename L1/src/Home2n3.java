@@ -16,6 +16,10 @@ public class Home2n3 {
         String b2 = "Иqван";
         String c2 = "Иванович";
         char s = ' ';
+a1.s
+
+        System.out.println(  k k
+
 
  //       if ((a1+b1+c1)==(a2+b2+c2))
         if ((a1 + b1 + c1).equals(a2 + b2 + c2))

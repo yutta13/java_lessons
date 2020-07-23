@@ -4,6 +4,7 @@ import java.io.IOException;
 
 public class FileClass {
 
+
     public static void main(String[] args) throws IOException {
 
 
@@ -26,6 +27,13 @@ public class FileClass {
             }
          }
 
+        File[] arrayt = path.listFiles(new TxtFilter());
+        for (File txtFile : arrayt){ //for each file.txt replace it to new dir
+            System.out.println(txtFile);
+            txtFile.renameTo(newTxtDir);
+        }
+
+        
     }
 }
 

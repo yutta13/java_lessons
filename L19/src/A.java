@@ -24,7 +24,7 @@ public class A{
             BufferedWriter out = new BufferedWriter(fw);
             while (iter.hasNext()){
                 String ss = iter.next().toString();
-                System.out.println(ss);
+                //System.out.println(ss);
                 out.write(ss);
                 out.newLine();
             }
